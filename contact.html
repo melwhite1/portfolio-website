@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Melissa White Portfolio</title>
+  <link rel="shortcut icon" href="img/favicon.jpg">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header class="page-header">
+    <img src="img/mel_white_logo.png" width="150" height="auto" alt="A logo with an M in a box and the name Melissa White underneath">
+    <nav class="main-navigation__item page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list_item">About Me</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list_item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list_item navigation-list_item--active">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contact">
+    <h1>Contact</h1>
+    <h2>
+      Feel free to reach out at any time!
+    </h2>
+  </div>
+
+  <div class="contact__info">
+    <a href="mailto:melissawhite668@gmail.com">Contact me</a><br>
+    <br>
+    Melissa White<br>
+    1111 Sinclaire Ave.<br>
+    Austin, Tx 78734<br>
+    United States<br>
+    <br>
+    Phone <a href="tel:214-995-0895">(+1)214-995-0895</a><br>
+    Skype <a href="skype:hello.careerfoundry"> hello.careerfoundry</a><br>
+    <a href="mailto:melissawhite668@gmail.com">melissawhite668@gmail.com</a>
+  </div>
+
+  <div class="message__box">
+    <form action="" method="post" id="contact-form">
+      <label class="standard-label" for="contact-email">E-mail: </label>
+      <input type="email" id="contact-email" required>
+
+      <label class="standard-label" for="contact-tel">Telephone: </label>
+      <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
+      <label class="standard-label" for="my-input">Message: </label>
+      <textarea id="my-input" required maxlength="240"></textarea>
+      <input type="submit" value="Send message">
+    </form>
+  </div>
+
+  <footer class="page-footer">
+    <p>Find me on:</p>
+    <div class="social-media">
+      <img src="img/github_icon.svg" alt="Github">
+      <img src="img/twitter_icon.svg" alt="Twitter">
+      <img src="img/linkedin_icon.svg" alt="LinkedIn">
+    </div>
+  </footer>
+
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
