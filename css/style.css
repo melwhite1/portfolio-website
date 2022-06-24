@@ -32,13 +32,14 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.8;
-  color: var(--secondary-color);
+  color: var(--text-color);
   background-color: var(--background-color);
 }
 
 h1 {
   font-family: 'Libre Baskerville';
-  font-size: 35px;
+  font-size: 45px;
+  text-decoration: underline;
   font-weight: var(header-font-weight);
   color: var(--secondary-color)
 }
@@ -192,19 +193,21 @@ th, td {
 .contact {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
 }
 
 .contact, .contact__info {
   display: block;
   width: 100%;
-  padding-left: 2%
+  padding-left: 2%;
+  text-align: center;
 }
 
 .message__box {
-  display: flex;
+  display: block;
   width: auto;
-  padding: 2%
+  padding: 2%;
+  text-align: center;
 }
 
 .page-footer {
@@ -212,6 +215,7 @@ th, td {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 150px;
 }
 
 .page-header {
@@ -219,7 +223,7 @@ th, td {
   width: 100%;
   padding-top: 2%;
   padding-left: 2%;
-  padding-bottom: 15%
+  padding-bottom: 5%
 }
 
 .page-header__item {
@@ -239,12 +243,14 @@ th, td {
   display: flex;
   flex-direction: column;
   margin-left: 2%;
+  text-align: center;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 300px 300px 300px;
-  grid-gap: 20px
+  grid-gap: 20px;
+  justify-content: center;
 }
 
 .grid__item {
@@ -258,7 +264,7 @@ th, td {
   grid-row-end: 3;
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 900px) {
   .grid {
     grid-gap: 10px;
   }
@@ -268,17 +274,13 @@ th, td {
   }
 }
 
-h1 {
-    font-size: 40px;
-  }
-
-@media all and (min-width: 500px) and (max-width: 750px){
+@media all and (min-width: 700px) and (max-width: 900px){
     .grid {
       grid-template-columns: 1fr 1fr;
     }
   }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 700px) {
   .grid {
     grid-template-columns: 1fr;
   }
